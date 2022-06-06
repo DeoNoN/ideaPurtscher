@@ -1,0 +1,1884 @@
+/* ----------------------------------------------------------------------------- */
+/* ------------------------------------GLOBAL----------------------------------- */
+/* ----------------------------------------------------------------------------- */
+
+    /* ---------------- Reset y propiedades generales ---------------- */
+
+        * {
+
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Nunito', sans-serif;
+
+        }
+
+        body {
+
+            display: grid;
+            width: 100%;
+            height: 100vh;
+            background-color: #f0e3e5;
+            margin-bottom: 100px;
+
+        }
+
+        p {
+
+            text-align: justify;
+            font-weight: 600;
+            font-size: 16px;
+
+        }
+
+        .izq {
+
+            float: left;
+            margin: 0 10px 10px 0
+
+        }
+        
+        .der {
+
+            float: right;
+            margin: 0 0 10px 10px
+            
+        }
+
+        img, iframe {
+
+            border: solid 6px #ffa9b8;;
+
+        }
+
+    /* ---------------- Fin reset y propiedades generales ---------------- */
+
+    @media (max-width: 480px) {
+    /* MOBILE SMARTPHONE --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/
+    /*  --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--*/
+
+        /* ---------------- Scraps ---------------- */
+
+            .noSmart {display: none;}
+
+        /* ---------------- Fin scraps ---------------- */
+
+        /* ---------------- Ajustes de titulo y logotipo ---------------- */
+
+            header {
+
+                background-color: pink;
+                height: 23vh;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                z-index: 1;
+
+            }
+
+            header div {
+
+                /* Flexbox */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                height: 12.5vh;
+
+            }
+
+            header div img {
+
+                height: 40px;
+                border: 0;                 /* Correccion de ajustes generales */
+
+            }
+
+            header div h1 {
+
+                font-family: 'Dancing Script', cursive;
+                font-size: 40px;
+
+            }
+
+        /* ---------------- Fin de ajustes de titulo y logotipo ---------------- */
+
+        /* ---------------- Ajustes de menu de navegacion ---------------- */
+
+            /* ---------------- Scraps ---------------- */
+            
+                .navTablet {display: none;}
+            
+            /* ---------------- Final scraps ---------------- */
+
+            nav {
+
+                /* Flexbox */
+                display: flex;
+                flex-flow: row wrap;
+
+                /* Boxmodel */
+                width: 100%;
+                height: 11vh;
+                background-color: #ffa9b8;
+
+            }
+
+            nav div {
+
+                width: 50%;
+                height: 3vh;
+                border: solid 2px pink;
+                text-align: center;
+
+            }
+
+            nav div a {
+
+                font-weight: 600;
+                text-decoration: none;
+                color: black;
+                font-size: 2vh;
+
+            }
+
+        /* ---------------- Fin de ajustes de menu de navegacion ---------------- */
+
+        /* ---------------- Ajustes de Footer ---------------- */
+
+            footer {
+
+                /* Flexbox */
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-wrap: wrap;
+
+                /* Boxmodel */
+                width: 100%;
+                background-color: pink;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                padding: 0.5vh 0;
+                z-index: 1;
+
+            }
+
+            footer div {
+
+                /* Flexbox */
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+
+                /* Boxmodel */
+                background: #ffa9b8;
+                padding: 3px;
+                margin: 0.5%;
+                width: 49%;
+            }
+
+            footer div h4 {
+
+                text-align: center;
+                font-size: 14px;
+
+            }
+
+            footer div img {
+                
+                width: 15px;
+                border: 0;                   /* Correccion de ajustes generales */
+
+            }
+
+        /* ---------------- Fin de ajustes de footer ---------------- */
+
+    /*  --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/
+    /* MOBILE SMARTPHONE --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/}
+
+    @media (min-width: 481px) and (max-width: 1023px) {
+    /* MOBILE TABLET --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/
+    /*  --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--*/
+
+        /* ---------------- Scraps ---------------- */
+
+            nav {display: none;}
+            .noTablet {display: none;}
+        
+        /* ---------------- Final scraps ---------------- */
+
+        /* ---------------- Ajustes de titulo y logotipo ---------------- */
+
+            header {
+
+                background-color: pink;
+                height: 12.5vh;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                z-index: 1;
+
+            }
+
+            header div {
+
+                /* Flexbox */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                height: 100%;
+
+            }
+
+            header div img {
+
+                height: 40px;
+                border: 0;                 /* Correccion de ajustes generales */
+
+            }
+
+            header div h1 {
+
+                font-family: 'Dancing Script', cursive;
+                font-size: 40px;
+
+            }
+
+        /* ---------------- Fin de ajustes de titulo y logotipo ---------------- */
+
+        /* ---------------- Ajustes de menu de navegacion ---------------- */
+        
+            .navTablet {
+
+                grid-area: menu;
+
+                /* Flexbox */
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+
+                /* Boxmodel */
+                width: 100%;
+                height: 40vh;
+
+            }
+
+            .navTablet div {
+
+                width: 100%;
+                height: 30px;
+                border: solid 2px pink;
+                background-color: #ffa9b8;
+                text-align: center;
+
+            }
+
+            .navTablet div a {
+
+                font-weight: 600;
+                text-decoration: none;
+                color: black;
+                font-size: 20px;
+
+            }
+
+        /* ---------------- Fin de ajustes de menu de navegacion ---------------- */
+
+        /* ---------------- Ajustes de Footer ---------------- */
+
+            footer {
+
+                /* Flexbox */
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-wrap: wrap;
+
+                /* Boxmodel */
+                width: 100%;
+                background-color: pink;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                padding: 0.5vh 0;
+                z-index: 1;
+
+            }
+
+            footer div {
+
+                /* Flexbox */
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+
+                /* Boxmodel */
+                background: #ffa9b8;
+                padding: 3px;
+                margin: 0.5%;
+                width: 49%;
+            }
+
+            footer div h4 {
+
+                text-align: center;
+                font-size: 14px;
+
+            }
+
+            footer div img {
+                
+                width: 15px;
+                border: 0;                   /* Correccion de ajustes generales */
+
+            }
+
+        /* ---------------- Fin de ajustes de footer ---------------- */
+
+    /*  --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/
+    /* MOBILE TABLET --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--*/}
+
+    @media (min-width: 1024px) {
+    /* DESKTOP --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/
+    /*  --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/
+
+        /* ---------------- Scraps ---------------- */
+
+            .navTablet {display: none;}
+            .noDesktop {display: none;}
+        
+        /* ---------------- Final scraps ---------------- */
+
+        /* ---------------- Ajustes de titulo y logotipo ---------------- */
+
+            header {
+
+                background-color: pink;
+                height: 60px;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                z-index: 1;
+
+            }
+
+            header div {
+
+                /* Flexbox */
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+
+                height: 100%;
+
+            }
+
+            header div img {
+
+                height: 40px;
+                border: 0;                 /* Correccion de ajustes generales */
+
+            }
+
+            header div h1 {
+
+                font-family: 'Dancing Script', cursive;
+                font-size: 40px;
+
+            }
+
+        /* ---------------- Fin de ajustes de titulo y logotipo ---------------- */
+
+        /* ---------------- Ajustes de menu de navegacion ---------------- */
+        
+            nav {
+
+                grid-area: menu;
+
+                /* Flexbox */
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+
+                /* Boxmodel */
+                width: 100%;
+                background-color: #ffa9b8;
+
+            }
+
+            nav div {
+
+                width: 200px;
+                height: 30px;
+                border-right: solid 2px pink;
+                background-color: #ffa9b8;
+                text-align: center;
+
+            }
+
+            nav div a {
+
+                font-weight: 600;
+                text-decoration: none;
+                color: black;
+                font-size: 20px;
+
+            }
+
+        /* ---------------- Fin de ajustes de menu de navegacion ---------------- */
+
+        /* ---------------- Ajustes de Footer ---------------- */
+
+            footer {
+
+                /* Flexbox */
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-wrap: wrap;
+
+                /* Boxmodel */
+                width: 100%;
+                background-color: pink;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                padding: 0.5vh 0;
+                z-index: 1;
+
+            }
+
+            footer div {
+
+                /* Flexbox */
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+
+                /* Boxmodel */
+                background: #ffa9b8;
+                padding: 3px;
+                margin: 0.5%;
+                width: 24%;
+            }
+
+            footer div h4 {
+
+                text-align: center;
+                font-size: 14px;
+
+            }
+
+            footer div img {
+                
+                width: 15px;
+                border: 0;                   /* Correccion de ajustes generales */
+
+            }
+
+        /* ---------------- Fin de ajustes de footer ---------------- */
+    
+    /* --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--/
+    /* DESKTOP --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/}
+    
+/* ----------------------------------------------------------------------------- */
+/* ------------------------------------FIN GLOBAL------------------------------- */
+/* ----------------------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------------------- */
+/* ------------------------------------INDEX------------------------------------ */
+/* ----------------------------------------------------------------------------- */
+
+    @media (max-width: 480px) {
+    /* MOBILE SMARTPHONE --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/
+    /*  --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--*/
+
+        /* ---------------- Ajustes de areas ---------------- */
+
+            #indexGrid {
+
+                /* GRIDS */
+                grid-template-areas:
+                "hero"
+                "txt1"
+                "txt2"
+                ;/* GRIDS */
+
+                grid-template-columns: 100%;
+                grid-template-rows: 2fr 1fr 1fr;
+
+            }
+
+        /* ---------------- Fin ajustes de areas ---------------- */
+
+        /* ---------------- Ajustes hero ---------------- */
+
+            .hero {
+
+                grid-area: hero;
+                width: 100%;
+                height: 100%;
+
+            }
+
+            .hero div {
+
+                /* Flexbox */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                /* Background */
+                background-image: url(../media/hero/hero_blur.png);
+                background-repeat: no-repeat;
+                background-size: 150%;
+
+                /* Boxmodel */
+                margin-top: 25vh;
+                height: 25vh;
+                border-top: 6px solid #ffa9b8;
+                border-bottom: 6px solid #ffa9b8;
+
+            }
+
+            .hero div h2 {
+
+                font-size: 50px;
+                font-family: 'Dancing Script', cursive;
+
+            }
+
+        /* ---------------- Fin ajustes hero ---------------- */
+
+        /* ---------------- Ajustes texto principal ---------------- */
+
+            .mainIndex {
+
+                padding: 0 10px 0 10px;
+
+            }
+
+            article img {
+
+                width: 40%;
+
+            }
+
+            .sup {
+
+                grid-area: txt1;
+
+            }
+
+            .inf {
+
+                grid-area: txt2;
+
+            }
+
+        /* ---------------- Fin ajustes texto principal ---------------- */
+        
+    /*  --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--*/
+    /* MOBILE SMARTPHONE --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/}
+
+    @media (min-width: 481px) and (max-width: 1023px) {
+    /* MOBILE TABLET --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/
+    /*  --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--*/
+
+
+        /* ---------------- Ajustes de areas ---------------- */
+
+            #indexGrid {
+
+                /* GRIDS */
+                grid-template-areas:
+                "hero hero"
+                "menu txt1"
+                "menu txt2"
+                "menu banner"
+                ;/* GRIDS */
+
+                grid-template-columns: 45% 55%;
+                grid-template-rows: 2fr 1fr 1fr 1fr;
+            }
+
+        /* ---------------- Fin ajustes de areas ---------------- */
+
+        /* ---------------- Ajustes hero ---------------- */
+
+            .hero {
+
+                grid-area: hero;
+                width: 100%;
+                height: 100%;
+
+            }
+
+            .hero div {
+
+                /* Flexbox */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                /* Background */
+                background-image: url(../media/hero/hero_blur.png);
+                background-repeat: no-repeat;
+                background-size: 150%;
+
+                /* Boxmodel */
+                margin-top: 15vh;
+                height: 25vh;
+                border-top: 6px solid #ffa9b8;
+                border-bottom: 6px solid #ffa9b8;
+
+            }
+
+            .hero div h2 {
+
+                font-size: 50px;
+                font-family: 'Dancing Script', cursive;
+
+            }
+
+        /* ---------------- Fin ajustes hero ---------------- */
+
+        /* ---------------- Ajustes banner ---------------- */
+
+            .bannerIndex {
+
+                grid-area: banner;
+                margin: 0 2% 0 1%;
+
+            }
+
+            .bannerIndex img {
+                width: 100%;
+                height: 100%;
+            }
+
+        /* ---------------- Fin ajustes banner ---------------- */
+
+        /* ---------------- Ajustes texto principal ---------------- */
+
+            .mainIndex {
+
+                padding: 0 10px 0 10px;
+
+            }
+
+            article img {
+
+                width: 40%;
+
+            }
+
+            .sup {
+
+                grid-area: txt1;
+
+            }
+
+            .inf {
+
+                grid-area: txt2;
+
+            }
+
+        /* ---------------- Fin ajustes texto principal ---------------- */
+
+    /*  --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--*/
+    /* MOBILE TABLET --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/}
+
+    @media (min-width: 1024px) {
+    /* DESKTOP --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/
+    /*  --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/
+
+        /* ---------------- Ajustes de areas ---------------- */
+
+            #indexGrid {
+
+                /* GRIDS */
+                grid-template-areas:
+                "hero hero hero"
+                "txt1 . extra"
+                "txt2 . banner"
+                ;/* GRIDS */
+
+                grid-template-columns: 30% 40% 30%;
+                grid-template-rows: 4fr 2fr 1fr;
+            }
+
+        /* ---------------- Fin ajustes de areas ---------------- */
+
+        /* ---------------- Ajustes hero ---------------- */
+
+            .hero {
+
+                grid-area: hero;
+
+                width: 100%;
+                height: 100%;
+
+            }
+
+            .hero div {
+
+                /* Flexbox */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                /* Background */
+                background-image: url(../media/hero/hero_blur.png);
+                background-repeat: no-repeat;
+                background-size: 150%;
+
+                /* Boxmodel */
+                margin-top: 100px;
+                height: 25vh;
+                border-top: 6px solid #ffa9b8;
+                border-bottom: 6px solid #ffa9b8;
+
+            }
+
+            .hero div h2 {
+
+                font-size: 50px;
+                font-family: 'Dancing Script', cursive;
+
+            }
+
+        /* ---------------- Fin ajustes hero ---------------- */
+
+        /* ---------------- Ajustes banner ---------------- */
+
+            .bannerIndex {
+
+                grid-area: banner;
+                margin: 0 2% 0 1%;
+
+            }
+
+            .bannerIndex img {
+                width: 100%;
+                height: 100%;
+            }
+
+        /* ---------------- Fin ajustes banner ---------------- */
+
+        /* ---------------- Ajustes extra ---------------- */
+        
+            aside {
+
+                grid-area: extra;
+
+            }
+
+        /* ---------------- Fin ajustes extra ---------------- */
+
+        /* ---------------- Ajustes texto principal ---------------- */
+
+            .mainIndex {
+
+                padding: 0 10px 0 10px;
+
+            }
+
+            article img {
+
+                width: 40%;
+
+            }
+
+            .sup {
+
+                grid-area: txt1;
+
+            }
+
+            .inf {
+
+                grid-area: txt2;
+
+            }
+
+        /* ---------------- Fin ajustes texto principal ---------------- */
+
+    /*  --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/
+    /* DESKTOP --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/}
+
+/* ----------------------------------------------------------------------------- */
+/* --------------------------------FIN INDEX------------------------------------ */
+/* ----------------------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------------------- */
+/* --------------------------------NOSOTROS------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+
+    @media (max-width: 480px) {
+    /* MOBILE SMARTPHONE --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/
+    /*  --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/
+
+        /* ---------------- Ajustes de areas ---------------- */
+
+            #nosostrosGrid {
+
+                /* GRIDS */
+                grid-template-areas:
+                "bannerNos"
+                "txt"
+                ;/* GRIDS */
+
+                grid-template-columns: 100%;
+                grid-template-rows: 1fr 1fr;
+
+            }
+
+        /* ---------------- Fin ajustes de areas ---------------- */
+
+        /* ---------------- Ajustes Banner ---------------- */
+
+            .bannerNos {
+
+                grid-area: bannerNos;
+                width: 100%;
+                height: 100%;
+
+            }
+
+            .bannerNos div {
+
+                /* Flexbox */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                /* Background */
+                background-image: url(https://images.pexels.com/photos/939835/pexels-photo-939835.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+                background-repeat: no-repeat;
+                background-size: 150%;
+
+                /* Boxmodel */
+                margin-top: 25vh;
+                height: 25vh;
+                border-top: 6px solid #ffa9b8;
+                border-bottom: 6px solid #ffa9b8;
+
+            }
+
+            .bannerNos div h2 {
+
+                font-size: 50px;
+                font-family: 'Dancing Script', cursive;
+
+            }
+                
+        /* ---------------- Fin ajustes banner ---------------- */
+            
+        /* ---------------- Fin ajustes banner ---------------- */
+
+            .txt1 {
+
+                grid-area: txt;
+                margin: 0 2%;
+
+            }
+
+            .txt1 img {
+
+                float: left;
+                width: 25%;
+                margin: 0 1% 1% 0;
+
+            }
+        
+        /* ---------------- Fin ajustes banner ---------------- */
+
+    /*  --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/
+    /* MOBILE SMARTPHONE --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/}
+
+    @media (min-width: 480px) and (max-width: 1023px) {
+    /* MOBILE TABLET --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/
+    /*  --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/
+
+        /* ---------------- Ajustes de areas ---------------- */
+
+            #nosostrosGrid {
+
+                /* GRIDS */
+                grid-template-areas:
+                "bannerNos bannerNos"
+                "menu txt"
+                ;/* GRIDS */
+
+                grid-template-columns: 45% 55%;
+                grid-template-rows: 1fr 2fr;
+
+            }
+        
+        /* ---------------- Fin ajustes de areas ---------------- */
+
+        /* ---------------- Ajustes Banner ---------------- */
+
+            .bannerNos {
+
+                grid-area: bannerNos;
+                width: 100%;
+                height: 100%;
+
+            }
+
+            .bannerNos div {
+
+                /* Flexbox */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                /* Background */
+                background-image: url(https://images.pexels.com/photos/939835/pexels-photo-939835.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+                background-repeat: no-repeat;
+                background-size: 150%;
+
+                /* Boxmodel */
+                margin-top: 15vh;
+                height: 25vh;
+                border-top: 6px solid #ffa9b8;
+                border-bottom: 6px solid #ffa9b8;
+
+            }
+
+            .bannerNos div h2 {
+
+                font-size: 50px;
+                font-family: 'Dancing Script', cursive;
+
+            }
+                
+        /* ---------------- Fin ajustes banner ---------------- */
+            
+        /* ---------------- Ajustes texto principal ---------------- */
+
+            .txt1 {
+
+                grid-area: txt;
+
+                margin: 0 2%;
+
+            }
+
+            .txt1 p {
+
+                font-size: 20px;
+
+            }
+
+            .txt1 img {
+
+                float: left;
+                width: 25%;
+                margin: 0 1% 1% 0;
+
+            }
+        
+        /* ---------------- Fin ajustes de texto principal ---------------- */
+
+    /*  --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/
+    /* MOBILE TABLET --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/}
+
+    @media (mIN-width: 1024px) {
+    /* DESKTOP --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/
+    /*  --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--*/
+
+        /* ---------------- Ajustes de areas ---------------- */
+
+            #nosostrosGrid {
+
+                /* GRIDS */
+                grid-template-areas:
+                "bannerNos txt2 txt3"
+                "txt txt2 txt3"
+                "txt txt2 imgNos"
+                ;/* GRIDS */
+
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 2fr 1fr;
+
+            }
+
+        /* ---------------- Fin ajustes de areas ---------------- */
+        
+        /* ---------------- Ajustes Banner ---------------- */
+
+            .bannerNos {
+
+                grid-area: bannerNos;
+                width: 100%;
+                height: 100%;
+
+            }
+
+            .bannerNos div {
+
+                /* Flexbox */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                /* Background */
+                background-image: url(https://images.pexels.com/photos/939835/pexels-photo-939835.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+                background-repeat: no-repeat;
+                background-size: 150%;
+
+                /* Boxmodel */
+                margin-top: 12vh;
+                margin-bottom: 2vh;
+                height: 25vh;
+                border: solid 6px #ffa9b8;
+
+            }
+
+            .bannerNos div h2 {
+
+                font-size: 50px;
+                font-family: 'Dancing Script', cursive;
+
+            }
+
+            .bannerDesktop img {
+
+                grid-area: imgNos;
+
+                width: 100%;
+                margin-bottom: 10vh;
+
+            }
+                
+        /* ---------------- Fin ajustes banner ---------------- */
+            
+        /* ---------------- Ajustes texto principal ---------------- */
+
+            .txt1 {
+
+                grid-area: txt;
+
+            }
+
+            .txt2 {
+
+                grid-area: txt2;
+
+            }
+
+            .txt3 {
+
+                grid-area: txt3;
+
+            }
+
+            .nosTxt {
+
+                margin: 0 2%;
+
+            }
+
+            .nosTxt p {
+
+                font-size: 18px;
+                margin-top: 12vh;
+
+            }
+
+            .nosTxt img {
+
+                float: left;
+                width: 25%;
+                margin: 0 1% 1% 0;
+
+            }
+        
+        /* ---------------- Fin ajustes de texto principal ---------------- */
+
+    /*  --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--*/
+    /* DESKTOP --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/}
+
+/* ----------------------------------------------------------------------------- */
+/* --------------------------------FIN NOSOTROS--------------------------------- */
+/* ----------------------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------------------- */
+/* --------------------------------SERVICIOS------------------------------------ */
+/* ----------------------------------------------------------------------------- */
+
+    @media (max-width: 480px) {
+    /* MOBILE SMARTPHONE --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/
+    /*  --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/
+
+        /* ---------------- Ajustes de areas ---------------- */
+
+            #serviciosGrid {
+
+                /* GRIDS */
+                grid-template-areas:
+                "tabla"
+                "vid1"
+                "vid2"
+                ;/* GRIDS */
+
+                grid-template-columns: 100%;
+                grid-template-rows: 2fr 1fr 1fr;
+
+            }
+
+        /* ---------------- Fin ajustes de areas ---------------- */
+
+        /* ---------------- Ajustes de tabla ---------------- */
+
+            .servTabla {
+
+                padding-left: 1%;
+                grid-area: tabla;
+                margin-top: 30vh;
+
+            }
+
+            .servTabla table {
+
+                width: 80%;
+                border: 6px solid #ffa9b8;
+                background-color: pink;
+                font-size: 30px;
+                font-weight: 600;
+
+            }
+
+            .tablaSubtitulo {
+
+                background-color: #ffa9b8;
+                font-size: 20px;
+                font-weight: normal;
+
+            }
+
+            .elemento td {
+
+                background-color: #f0e3e5;
+                font-size: 16px;
+                font-weight: normal;
+
+            }
+
+        /* ---------------- Fin de ajustes de tabla ---------------- */
+
+        /* ---------------- Configuracion Videos ---------------- */
+
+            .primero {
+
+                grid-area: vid1;
+
+            }
+
+            .segundo {
+
+                grid-area: vid2;
+
+            }
+
+            .video  iframe {
+
+                width: 80%;
+                height: 80%;
+
+            }
+
+        /* ---------------- Fin de configuracion Videos ---------------- */
+
+    /*  --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--*/
+    /* MOBILE SMARTPHONE --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--*/}
+
+    @media (min-width: 481px) and (max-width: 1023px) {
+    /* MOBILE TABLET --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/
+    /*  --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--*/
+    
+        /* ---------------- Ajustes de areas ---------------- */
+
+            #serviciosGrid {
+
+                /* GRIDS */
+                grid-template-areas:
+                "tabla vid1"
+                "menu vid2"
+                "menu vid3"
+                ;/* GRIDS */
+
+                grid-template-columns: 45% 55%;
+                grid-template-rows: 1r 1fr 1fr;
+
+            }
+
+        /* ---------------- Fin ajustes de areas ---------------- */
+
+        /* ---------------- Ajustes de tabla ---------------- */
+
+            .servTabla {
+
+                padding-left: 1%;
+                grid-area: tabla;
+                margin-top: 15vh;
+
+            }
+
+            .servTabla table {
+
+                width: 100%;
+                border: 6px solid #ffa9b8;
+                background-color: pink;
+                font-size: 30px;
+                font-weight: 600;
+
+            }
+
+            .tablaSubtitulo {
+
+                background-color: #ffa9b8;
+                font-size: 20px;
+                font-weight: normal;
+
+            }
+
+            .elemento td {
+
+                background-color: #f0e3e5;
+                font-size: 16px;
+                font-weight: normal;
+
+            }
+
+        /* ---------------- Fin de ajustes de tabla ---------------- */
+
+        /* ---------------- Configuracion Videos ---------------- */
+
+            .primero {
+                
+                margin-top: 15vh;
+                grid-area: vid1;
+
+            }
+
+            .segundo {
+
+                grid-area: vid2;
+
+            }
+
+            .tercero {
+
+                grid-area: vid3;
+
+            }
+
+            .video {
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+            }
+
+            .video iframe {
+
+                width: 80%;
+                height: 20vh;
+
+            }
+
+        /* ---------------- Fin de configuracion Videos ---------------- */
+
+    /*  --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--*/
+    /* MOBILE TABLET --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/}
+
+    @media (min-width: 1024px) {
+    /* DESKTOP --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/
+    /*  --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/
+
+        /* ---------------- Ajustes de areas ---------------- */
+
+            #serviciosGrid {
+
+                /* GRIDS */
+                grid-template-areas:
+                "tabla tabla aside"
+                "vid1 vid2 vid3"
+                ;/* GRIDS */
+
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+
+            }
+
+        /* ---------------- Fin ajustes de areas ---------------- */
+
+        /* ---------------- Ajustes de tabla ---------------- */
+
+            .servTabla {
+                
+                grid-area: tabla;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                padding-left: 1%;
+                margin-top: 12vh;
+
+            }
+
+            .servTabla table {
+
+                width: 100%;
+                border: 6px solid #ffa9b8;
+                background-color: pink;
+                font-size: 30px;
+                font-weight: 600;
+
+            }
+
+            .tablaSubtitulo {
+
+                background-color: #ffa9b8;
+                font-size: 20px;
+                font-weight: normal;
+
+            }
+
+            .elemento td {
+
+                background-color: #f0e3e5;
+                font-size: 16px;
+                font-weight: normal;
+
+            }
+
+        /* ---------------- Fin de ajustes de tabla ---------------- */
+
+        /* ---------------- Configuracion Videos ---------------- */
+
+            .primero {
+                
+                grid-area: vid1;
+
+            }
+
+            .segundo {
+
+                grid-area: vid2;
+
+            }
+
+            .tercero {
+
+                grid-area: vid3;
+
+            }
+
+            .video {
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+            }
+
+            .video iframe {
+
+                width: 100%;
+                height: 60%;
+
+            }
+
+        /* ---------------- Fin de configuracion Videos ---------------- */
+
+        /* ---------------- Configuracion Aside ---------------- */
+
+            .asideServ {
+                
+                grid-area: aside;
+
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                justify-content: center;
+
+                padding: 12vh 20% 0 0;
+
+            }
+
+            .asideServ img {
+
+                width: 33%;
+
+            }
+
+        /* ---------------- Fin configuracion Aside ---------------- */
+    
+    /*  --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/
+    /* DESKTOP --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/}
+
+/* ----------------------------------------------------------------------------- */
+/* ----------------------------FIN SERVICIOS------------------------------------ */
+/* ----------------------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------------------- */
+/* ----------------------------GALERIA------------------------------------------ */
+/* ----------------------------------------------------------------------------- */
+
+    @media (max-width: 480px) {
+    /* MOBILE SMARTPHONE --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--*/
+    /*  --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/
+
+        /* ---------------- Ajustes de areas ---------------- */
+
+            #galeriaGrid {
+
+                /* GRIDS */
+                grid-template-areas:
+                "titulo"
+                "gal"
+                "banner"
+                ;/* GRIDS */
+
+                grid-template-columns: 100%;
+                grid-template-rows: 1fr 2fr 2fr 4fr;
+
+                grid-column-gap: 6px;
+                grid-row-gap: 6px;
+
+            }
+
+        /* ---------------- Fin ajustes de areas ---------------- */
+
+        /* ---------------- Ajustes de galeria ---------------- */
+
+            .titulo {
+
+                grid-area: titulo;
+                width: 100%;
+                background-color: #ffa9b8;
+                font-size: 20px;
+                margin-top: 25vh;
+
+            }
+
+            .gal img {
+
+                width: 150px;
+
+            }
+
+            .gal {
+
+                grid-area: gal;
+
+                /* Flexbox */
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-evenly;
+
+            }
+
+            .bannerGal {
+
+                grid-area: banner;
+
+                display: flex;
+                justify-content: center;
+
+                margin-bottom: 10vh;
+
+            }
+
+            .bannerGal img {
+
+                width: calc(200px + 33%)
+
+            }
+
+        /* ---------------- Fin de ajustes de galeria ---------------- */
+
+    /*  --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--*/
+    /* MOBILE SMARTPHONE --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/}
+
+    @media (min-width: 481px) and (max-width: 1023px) {
+    /* MOBILE TABLET --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--*/
+    /*  --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/
+    
+        /* ---------------- Ajustes de areas ---------------- */
+
+            #galeriaGrid {
+
+                /* GRIDS */
+                grid-template-areas:
+                "titulo titulo"
+                "gal gal"
+                "menu banner"
+                "menu banner2"
+                ;/* GRIDS */
+
+                grid-template-columns: 50% 50%;
+                grid-template-rows: 1fr 4fr 1fr 1fr;
+
+                grid-column-gap: 6px;
+                grid-row-gap: 6px;
+
+            }
+
+        /* ---------------- Fin ajustes de areas ---------------- */
+
+        /* ---------------- Ajustes de galeria ---------------- */
+
+            .titulo {
+
+                grid-area: titulo;
+
+                width: 100%;
+                background-color: #ffa9b8;
+                font-size: 20px;
+                margin-top: 15vh;
+
+            }
+
+            .gal img {
+
+                width: 150px;
+
+            }
+
+            .gal {
+
+                grid-area: gal;
+
+                /* Flexbox */
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-evenly;
+
+            }
+
+            .bannerGal {
+
+                /* Flexbox */
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+
+                padding-right: 2%;
+
+            }
+
+            .bannerGal img {
+
+                width: 90%
+
+            }
+
+        /* ---------------- Fin de ajustes de galeria ---------------- */
+
+    /*  --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--*/
+    /* MOBILE TABLET --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/}
+
+    @media (min-width: 1024px) {
+    /* DESKTOP --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--*/
+    /*  --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/
+    
+        /* ---------------- Ajustes de areas ---------------- */
+
+            #galeriaGrid {
+
+                /* GRIDS */
+                grid-template-areas:
+                "fila1"
+                "fila2"
+                "fila3"
+                ;/* GRIDS */
+
+                grid-template-columns: 100%;
+                grid-template-rows: repeat(3, 1fr);
+
+                grid-column-gap: 6px;
+                grid-row-gap: 6px;
+
+            }
+
+        /* ---------------- Fin ajustes de areas ---------------- */
+
+        /* ---------------- Ajustes de galeria ---------------- */
+
+            .gal, .gal2 {
+
+                /* Flexbox */
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-evenly;
+
+            }
+
+            .gal {
+                
+                grid-area: fila1;
+                margin-top: 12vh;
+            
+            }
+
+            .gal2 {
+                
+                grid-area: fila3;
+            
+            }
+
+            .gal img, .gal2 img {
+
+                width: 15%;
+
+            }
+
+            .bannerGal {
+
+                /* Flexbox */
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+
+            }
+
+            .bannerGal img {
+
+                width: 25%
+
+            }
+
+        /* ---------------- Fin de ajustes de galeria ---------------- */
+
+    /*  --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/
+    /* DESKTOP --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/}
+
+/* ----------------------------------------------------------------------------- */
+/* ----------------------------FIN GALERIA-------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------------------- */
+/* ----------------------------CONTACTO----------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+
+    @media (max-width: 480px) {
+    /* MOBILE SMARTPHONE --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--*/
+    /*  --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/
+    
+        /* ---------------- Ajustes de areas ---------------- */
+
+            #contactoGrid {
+
+                /* GRIDS */
+                grid-template-areas:
+                "form"
+                ;/* GRIDS */
+
+                grid-template-columns: 100%;
+                grid-template-rows: 100%;
+
+            }
+
+        /* ---------------- Fin ajustes de areas ---------------- */
+
+        /* ---------------- Ajustes de form ---------------- */
+
+            .form {
+
+                grid-area: form;
+
+                margin: 25vh 2%;
+
+            }
+
+            .form h2 {
+
+                background-color: #ffa9b8;
+                text-align: center;
+
+            }
+
+            .form form {
+
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                background-color: pink;
+                padding: 20px;
+
+            }
+
+            .boton {
+
+                margin-top: 2vh;
+
+            }
+        
+        /* ---------------- Fin ajustes de form ---------------- */
+
+    /*  --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/ 
+    /* MOBILE SMARTPHONE --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--*/}
+
+    @media (min-width: 481px) and (max-width: 1023px) {
+    /* MOBILE TABLET --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--*/
+    /*  --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/
+    
+        /* ---------------- Ajustes de areas ---------------- */
+
+            #contactoGrid {
+
+                /* GRIDS */
+                grid-template-areas:
+                ". form"
+                "menu ."
+                ;/* GRIDS */
+
+                grid-template-columns: 45% 55%;
+                grid-template-rows: 50% 50%;
+
+            }
+
+        /* ---------------- Fin ajustes de areas ---------------- */
+
+        /* ---------------- Ajustes de form ---------------- */
+
+            .form {
+
+                grid-area: form;
+
+                margin: 15vh 2%;
+
+            }
+
+            .form h2 {
+
+                background-color: #ffa9b8;
+                text-align: center;
+
+            }
+
+            .form form {
+
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                background-color: pink;
+                padding: 20px;
+
+            }
+
+            .boton {
+
+                margin-top: 2vh;
+
+            }
+        
+        /* ---------------- Fin ajustes de form ---------------- */
+
+    /*  --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/ 
+    /* MOBILE TABLET --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--*/}
+
+    @media (min-width: 1024px) {
+    /* MOBILE TABLET --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--*/
+    /*  --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/
+    
+        /* ---------------- Ajustes de areas ---------------- */
+
+            #contactoGrid {
+
+                /* GRIDS */
+                grid-template-areas:
+                "form ."
+                "banner banner"
+                ;/* GRIDS */
+
+                grid-template-columns: 45% 55%;
+                grid-template-rows: 1fr 1fr;
+
+            }
+
+        /* ---------------- Fin ajustes de areas ---------------- */
+
+        /* ---------------- Ajustes de form ---------------- */
+
+            .form {
+
+                grid-area: form;
+
+                margin: 12vh 2%;
+
+            }
+
+            .form h2 {
+
+                background-color: #ffa9b8;
+                text-align: center;
+
+            }
+
+            .form form {
+
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                background-color: pink;
+                padding: 20px;
+
+            }
+
+            .boton {
+
+                margin-top: 2vh;
+
+            }
+        
+        /* ---------------- Fin ajustes de form ---------------- */
+
+        /* ---------------- Ajustes de banner ---------------- */
+
+            .bannerContacto {
+
+                grid-area: banner;
+
+            }
+
+            .bannerContacto img {
+
+                width: 100%;
+                height: 60%;
+                object-fit: cover;
+                border-left: none;
+                border-right: none;
+
+            }
+
+        /* ---------------- Fin de ajustes de banner ---------------- */
+
+    /*  --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/ 
+    /* MOBILE TABLET --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--*/}
+
+/* ----------------------------------------------------------------------------- */
+/* ----------------------------FIN CONTACTO------------------------------------- */
+/* ----------------------------------------------------------------------------- */

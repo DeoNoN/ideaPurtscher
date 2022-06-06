@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>Kitty's Nails - Contacto</title>
+
+        <link rel="stylesheet" href="../css/estilo1.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Nunito:ital,wght@0,200;0,400;0,800;1,200&display=swap');
+        </style>
+
+    </head>
+
+    <body id="contactoGrid">
+
+        <!-------------------------- Encabezado Fijo -------------------------->
+        <header>
+
+            <!-- Comienzo logoisotipo -->
+            <div>
+
+                <a href="../index.html">
+                    <img 
+                        src="../media/logo.png"
+                        alt="logotipo de la empresa"
+                    >
+                </a>
+
+                <h1>
+                    Kitty's Nails
+                </h1>
+
+            </div>   
+            <!-- Fin logoisotipo -->
+
+            <!-- Menu de navegacion mobile y desktop -->
+            <nav>
+
+                <div><a href="../index.html">INICIO</a></div>
+                <div><a href="./nosotros.html">NOSOTROS</a></div>
+                <div><a href="./servicios.html">SERVICIOS</a></div>   
+                <div><a href="./galeria.html">GALERIA</a></div>
+                <div><a href="./contacto.html">CONTACTO</a></div>
+                <div class="noDesktop"></div>             <!-- Contenedor estetico -->
+                
+            </nav>
+            <!-- Final del menu de navegacion mobile y desktop-->
+
+        </header>
+        <!-------------------------- Fin encabezado fijo -------------------------->
+
+        <!-- Menu de navegacion vertical tablet -->
+        <nav class="navTablet">
+
+            <div><a href="../index.html">INICIO</a></div>
+            <div><a href="./nosotros.html">NOSOTROS</a></div>
+            <div><a href="./servicios.html">SERVICIOS</a></div>   
+            <div><a href="./galeria.html">GALERIA</a></div>
+            <div><a href="./contacto.html">CONTACTO</a></div>
+            
+        </nav>
+        <!-- Final del menu de navegacion vertical tablet-->
+
+        <!---------------------------- Comienzo de form ---------------------------->
+        <main class="form">
+
+            <h2>
+                Contactanos!
+            </h2>
+
+            <!-- Comienzo formulario de contacto -->
+            <form>
+                <label for="nombre">Nombre <br> 
+                    <input type="text" placeholder="Ingrese su nombre" name="nombre"><br>
+                </label>
+
+                <label for="email">E-mail <br>
+                    <input type="email" placeholder="aaaaa@email.com" name="email"><br>
+                </label>
+
+                <label for="edad">Edad <br>
+                    <input type="number" placeholder="0"><br>
+                </label>
+                
+                <label for="fav">Tipo de unia favoritos <br>
+                    <select name="fav" id="fav">
+                        <option value="tipo1">Tipo 1</option>
+                        <option value="tipo2">Tipo 2</option>
+                        <option value="tipo3">Tipo 3</option>
+                    </select>
+                </label>
+
+                <div>
+
+                    Desea recibir informacion sobre nosotros?
+                    <input type="checkbox" name="informacion" value="1">
+
+                </div>
+
+                <input type="submit" value="Enviar" class="boton">
+
+                <input type="reset" value="Reiniciar" class="boton">
+            </form>
+            <!-- Final de formulario de contacto -->
+
+        </main>
+        <!---------------------------- Fin de form ---------------------------->
+
+        <!---------------------------- Comienzo banner desktop ---------------------------->
+        <section class="bannerContacto noSmart noTablet">
+
+            <img
+                src="../media/hero/hero.jpg"
+                alt="Banner de unias rojas"
+            >
+
+        </section>
+        <!---------------------------- Fin banner desktop ---------------------------->
+
+        <!---------------------------- Comienzo de footer ---------------------------->
+        <footer>
+            
+            <div>
+
+                <img
+                    src="../media/footer/email.png"
+                    alt="icono de email"
+                >
+
+                <h4>empresa@gmail.com</h4>
+
+            </div>
+
+            <div>
+
+                <img
+                    src="../media/footer/whatsapp.png"
+                    alt="icono de telefono"
+                >
+
+                <h4>099 000 000</h4>
+
+            </div>
+
+            <div>
+
+                <img
+                    src="../media/footer/telefono.png"
+                    alt="icono de telefono"
+                >
+
+                <h4>4552 0000</h4>
+
+            </div>
+
+            <div>
+
+                <img
+                    src="../media/footer/instagram.png"
+                    alt="icono de instagram"
+                >
+
+                <h4>@igEmpresa</h4>
+
+            </div>
+            
+        </footer>
+
+    </body>
+
+</html>
