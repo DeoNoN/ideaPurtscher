@@ -85,6 +85,90 @@
 
         }
 
+        footer {
+
+            /* Flexbox */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+
+            /* Boxmodel */
+            width: 100%;
+            background: #ffa9b8;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            padding: 0.5vh 0;
+            z-index: 1;
+
+        }
+
+        footer div {
+
+            /* Flexbox */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+
+            /* Boxmodel */
+            padding: 3px;
+            background-color: pink;
+            margin: 0.5%;
+            width: 49%;
+        }
+
+        footer div h4 {
+
+            text-align: center;
+            font-size: 14px;
+
+        }
+
+        footer div img {
+            
+            width: 15px;
+            border: 0;                   /* Correccion de ajustes generales */
+
+        }
+
+        header {
+
+            background-color: pink;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1;
+
+        }
+
+        .logo {
+
+            /* Flexbox */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            height: 100%;
+
+        }
+
+        .logo img {
+
+            height: 40px;
+            border: 0;                 /* Correccion de ajustes generales */
+
+        }
+
+        .logo h1 {
+
+            font-family: 'Dancing Script', cursive;
+            font-size: 40px;
+
+        }
+
     /* ---------------- Fin reset y propiedades generales ---------------- */
 
     @media (max-width: 480px) {
@@ -100,39 +184,11 @@
 
         /* ---------------- Ajustes de titulo y logotipo ---------------- */
 
-            header {
-
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-
-            }
-
             .logo {
-
-                /* Flexbox */
-                display: flex;
-                align-items: center;
-                justify-content: center;
 
                 height: 105px;
                 z-index: 1;
                 background-color: pink;
-
-            }
-
-            .logo a img {
-
-                height: 40px;
-                border: 0;                 /* Correccion de ajustes generales */
-
-            }
-
-            .logo h1 {
-
-                font-family: 'Dancing Script', cursive;
-                font-size: 40px;
 
             }
 
@@ -144,7 +200,7 @@
 
                 /* Flexbox */
                 display: flex;
-                flex-flow: row wrap;
+                flex-wrap: wrap;
                 justify-content: center;
 
                 /* Boxmodel */
@@ -223,58 +279,6 @@
 
         /* ---------------- Fin de ajustes de menu de navegacion ---------------- */
 
-        /* ---------------- Ajustes de Footer ---------------- */
-
-            footer {
-
-                /* Flexbox */
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-                flex-wrap: wrap;
-
-                /* Boxmodel */
-                width: 100%;
-                background: #ffa9b8;
-                position: fixed;
-                bottom: 0;
-                left: 0;
-                padding: 0.5vh 0;
-                z-index: 1;
-
-            }
-
-            footer div {
-
-                /* Flexbox */
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                flex-wrap: wrap;
-
-                /* Boxmodel */
-                padding: 3px;
-                background-color: pink;
-                margin: 0.5%;
-                width: 49%;
-            }
-
-            footer div h4 {
-
-                text-align: center;
-                font-size: 14px;
-
-            }
-
-            footer div img {
-                
-                width: 15px;
-                border: 0;                   /* Correccion de ajustes generales */
-
-            }
-
-        /* ---------------- Fin de ajustes de footer ---------------- */
-
     /*  --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/
     /* MOBILE SMARTPHONE --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/}
 
@@ -293,38 +297,7 @@
 
             header {
 
-                background-color: pink;
                 height: 120px;
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                z-index: 1;
-
-            }
-
-            .logo {
-
-                /* Flexbox */
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                height: 100%;
-
-            }
-
-            .logo img {
-
-                height: 40px;
-                border: 0;                 /* Correccion de ajustes generales */
-
-            }
-
-            .logo h1 {
-
-                font-family: 'Dancing Script', cursive;
-                font-size: 40px;
 
             }
 
@@ -371,58 +344,6 @@
 
         /* ---------------- Fin de ajustes de menu de navegacion ---------------- */
 
-        /* ---------------- Ajustes de Footer ---------------- */
-
-            footer {
-
-                /* Flexbox */
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-                flex-wrap: wrap;
-
-                /* Boxmodel */
-                width: 100%;
-                background: #ffa9b8;
-                position: fixed;
-                bottom: 0;
-                left: 0;
-                padding: 0.5vh 0;
-                z-index: 1;
-
-            }
-
-            footer div {
-
-                /* Flexbox */
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                flex-wrap: wrap;
-
-                /* Boxmodel */
-                padding: 3px;
-                margin: 0.5%;
-                background-color: pink;
-                width: 49%;
-            }
-
-            footer div h4 {
-
-                text-align: center;
-                font-size: 14px;
-
-            }
-
-            footer div img {
-                
-                width: 15px;
-                border: 0;                   /* Correccion de ajustes generales */
-
-            }
-
-        /* ---------------- Fin de ajustes de footer ---------------- */
-
     /*  --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/
     /* MOBILE TABLET --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--*/}
 
@@ -441,31 +362,11 @@
 
             header {
 
-                background-color: pink;
                 height: 60px;
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                z-index: 1;
-
-            }
-
-            .logo {
-
-                /* Flexbox */
-                display: flex;
-                align-items: flex-start;
-                justify-content: center;
-
-                height: 100%;
 
             }
 
             .logo a img {
-
-                height: 40px;
-                border: 0;                 /* Correccion de ajustes generales */
 
                 transition: transform 0.4s;
 
@@ -474,13 +375,6 @@
             .logo a img:hover {
 
                 transform: scale(0.8);
-
-            }
-
-            .logo h1 {
-
-                font-family: 'Dancing Script', cursive;
-                font-size: 40px;
 
             }
 
@@ -494,8 +388,6 @@
 
                 /* Flexbox */
                 display: flex;
-                flex-direction: row;
-                justify-content: flex-start;
 
                 /* Boxmodel */
                 width: 100%;
@@ -543,56 +435,14 @@
 
         /* ---------------- Ajustes de Footer ---------------- */
 
-            footer {
-
-                /* Flexbox */
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-                flex-wrap: wrap;
-
-                /* Boxmodel */
-                width: 100%;
-                background: #ffa9b8;
-                position: fixed;
-                bottom: 0;
-                left: 0;
-                padding: 0.5vh 0;
-                z-index: 1;
-
-            }
-
             footer div {
 
-                /* Flexbox */
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                flex-wrap: wrap;
-
-                /* Boxmodel */
-                padding: 3px;
-                background-color: pink;
-                margin: 0.5%;
-                width: 24%;
-            }
-
-            footer div h4 {
-
-                text-align: center;
-                font-size: 14px;
+                width: 24%;                     /* Correccion ajustes generales */
 
             }
 
-            footer div img {
-                
-                width: 15px;
-                border: 0;                   /* Correccion de ajustes generales */
+        /* ---------------- Fin ajustes de Footer ---------------- */
 
-            }
-
-        /* ---------------- Fin de ajustes de footer ---------------- */
-    
     /* --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--/
     /* DESKTOP --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/}
     
@@ -817,6 +667,7 @@
 
                 grid-template-columns: 30% 40% 30%;
                 grid-template-rows: 4fr 2fr 1fr;
+                
             }
 
         /* ---------------- Fin ajustes de areas ---------------- */
