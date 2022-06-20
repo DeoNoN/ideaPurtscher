@@ -1,0 +1,53 @@
+@media (min-width: 577px) and (max-width: 1023px) {
+/* MOBILE TABLET --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/
+/*  --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--*/
+
+// -----------Correcciones-------------
+
+nav {display: none;}
+.noTablet {display: none;}
+
+/* ---------------- Ajustes de titulo y logotipo ---------------- */
+
+header {
+
+    height: 120px;
+
+}
+
+/* ---------------- Fin de ajustes de titulo y logotipo ---------------- */
+
+
+/* ---------------------------------------- */
+/* --------------NAVEGACION---------------- */
+/* ---------------------------------------- */
+
+.navTablet {
+
+    grid-area: menu;
+
+    /* Flexbox */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    /* Boxmodel */
+    width: 100%;
+    height: 40vh;
+
+    div {
+
+        width: 100%;
+        height: 30px;
+        border: solid 2px pink;
+        background-color: #ffa9b8;
+        text-align: center;
+    
+        animation-name: muestraBor;
+        animation-duration: 0.6;
+    
+    }
+}
+
+/*  --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/
+/* MOBILE TABLET --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--*/}

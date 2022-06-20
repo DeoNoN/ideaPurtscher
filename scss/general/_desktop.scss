@@ -1,0 +1,88 @@
+@media (min-width: 1024px) {
+/* DESKTOP --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/
+/*  --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/
+
+// -----------Correcciones-------------
+
+.navTablet {display: none;}
+.noDesktop {display: none;}
+
+/* ---------------------------------------- */
+/* ----------------HEADER------------------ */
+/* ---------------------------------------- */
+
+header {
+
+    height: 60px;
+
+}
+
+.logo a img {
+
+    transition: transform 0.4s;
+
+    &hover {
+
+        transform: scale(0.8);
+
+    }
+}
+
+/* ---------------------------------------- */
+/* --------------NAVEGACION---------------- */
+/* ---------------------------------------- */
+
+nav {
+
+    grid-area: menu;
+
+    /* Flexbox */
+    display: flex;
+
+    /* Boxmodel */
+    width: 100%;
+    background-color: $color3;
+
+    div {
+
+        /* Flexbox */
+        display: flex;
+        align-items: center;
+
+        /* Boxmodel */
+        width: 200px;
+        height: 30px;
+        border: solid 0px $color2;         /* Setup transicion */
+        border-right-width: 2px;
+        background-color: $color3;
+
+        /* Transicion */
+        transition: border-width 0.3s;
+
+        &:hover {
+
+            border-width: 4px;
+        
+        }
+
+        a {
+
+            text-align: center;
+            width: 100%;
+        
+        }
+    }
+}
+
+/* ---------------------------------------- */
+/* ----------------FOOTER------------------ */
+/* ---------------------------------------- */
+
+footer div {
+
+    width: 24%;                     /* Correccion ajustes generales */
+
+}
+
+/* --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--/
+/* DESKTOP --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/}

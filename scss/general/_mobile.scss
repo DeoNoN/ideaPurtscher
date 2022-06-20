@@ -1,0 +1,98 @@
+@media (max-width: 576px) {
+/* MOBILE SMARTPHONE --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/
+/*  --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--*/
+
+// -----------Correcciones-------------
+
+.noSmart {display: none;}
+.navTablet {display: none;}
+
+/* ---------------------------------------- */
+/* --------------NAVEGACION---------------- */
+/* ---------------------------------------- */
+
+// ----------------LOGO----------------
+
+.logo {
+
+    height: 105px;
+    z-index: 1;
+    background-color: $color2;
+
+}
+
+// -------------NAVEGADOR-------------
+
+nav {
+
+    /* Flexbox */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    /* Boxmodel */
+    width: 100%;
+    padding-top: 6px;
+    background-color: $color3;
+    position: fixed;
+    top: 0;
+    height: 170px;
+    z-index: -1;
+
+    /* Ocultar el menu */
+    transition-duration: 1s;
+    transform: translateY(0);
+    
+    div {
+
+        margin: 0 1%;
+        width: 48%;
+        height: 30px;
+        text-align: center;
+        background-color: $color2;
+    
+    }
+
+    // DESPLIEGUE
+    label {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        img {
+
+            border: none;
+            height: 30px;
+
+            .flecha {
+
+                height: 10px;
+                transition-duration: 0.5s;
+                transform: rotate(0)
+            
+            }
+        }
+    }
+}
+
+// ------------ANIMACIONES------------
+
+// DESPLEGAR
+#menuAlternar:checked ~ nav {
+
+    transition-duration: 1s;
+    transform: translateY(105px);
+
+    // VOLTEAR FLECHA
+    label .flecha {
+
+        transition-duration: 0.5s;
+        transform: rotate(180deg)
+    
+    }
+
+}
+
+/*  --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/
+/* MOBILE SMARTPHONE --__--__--__--__--__--__--__--__--__--__--__--__--__--__--__--__*/}

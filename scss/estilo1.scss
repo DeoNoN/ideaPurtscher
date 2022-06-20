@@ -1,0 +1,16 @@
+// Ajustes iniciales y variables
+@import "./general/reset";
+@import "./general/colores";
+@import "./general/animaciones";
+
+//Paginas GENERALES
+@import "./general/global";
+@import "./general/mobile";
+@import "./general/tablet";
+@import "./general/desktop";
+
+// INDEX
+@import "./index/index-global";
+@import "./index/index-mobile";
+@import "./index/index-tablet";
+@import "./index/index-desktop";
