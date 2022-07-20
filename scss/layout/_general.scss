@@ -1,0 +1,98 @@
+// -----------RESET-------------
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+
+    h1, h2 {
+        font-family: 'Roboto Slab', serif;
+    }
+}
+
+// -----------LAYOUT-------------
+
+body {
+    background-image: url(https://t3.ftcdn.net/jpg/02/75/92/70/360_F_275927014_44zbs14KsOCF3OmzChvF5I4OGUlzPGCK.jpg);
+}
+
+.gridPadre {
+    display: grid;
+    background-color: rgba(241, 241, 241, 0.95);
+}
+
+// -----------NAVEGADOR-------------
+
+.navbar-light {
+    background-color: $color2;
+
+    div {
+        background-color: $color3;
+
+        .brand-font {
+            font-family: 'dancing script', cursive;
+            font-weight: 600;
+        }
+
+        button {
+            z-index: 1;         //correccion: el menu desplegable se superpone al recuadro del boton en algunos buscadores
+        }
+    }
+}
+
+// -----------FOOTER-------------
+
+footer {
+    grid-area: foot;
+
+    //Flexbox
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+    //boxmodel
+    width: 100vw;
+    height: 150px;
+    padding-top: 20px;
+    background-color: $color2;
+    border-bottom: 6px solid $color3;
+
+
+    .datos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        div > div {
+            //flexbox
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+    
+            //Boxmodel
+            height: 20px;
+            width: 250px;
+            margin-top: 6px;
+            padding: 6px;
+    
+            img {
+                width: 16px;
+            }
+        }
+
+        .footerLine {
+            width: 1px;
+            height: 100px;
+            background-color: rgb(110, 110, 110);
+        }
+    }
+        
+    .copy {
+        width: 300px;
+        align-self: flex-end;
+        margin-top: auto;
+    }
+}

@@ -1,0 +1,106 @@
+@media (min-width: 577px) and (max-width: 1024px) {
+//-----------------------------
+//------------INDEX------------
+//-----------------------------
+
+// -----------LAYOUT-------------
+
+#indexGrid {
+    grid-template-areas: 
+    "hero hero"
+    "car car"
+    "mainT mainB"
+    "foot foot"
+    ;
+
+    grid-template-columns: 50% 50%;
+    grid-template-rows: (600px + $topMargin) repeat(2, 500px) 150px;
+
+    width: 100%;
+}
+
+// -----------MAIN-------------
+
+.mainIndBot, .mainIndTop {
+    p {
+        width: 200px;
+    }
+}
+.mainIndBot {
+    background-color: $color2op1;
+}
+
+// -----------CARRUSEL-------------
+
+.customCar h2 {
+    font-size: 25px;
+}
+
+//-----------------------------
+//-----------NOSOTROS----------
+//-----------------------------
+
+#nosGrid {
+    grid-template-areas: 
+    "mainN"
+    "com"
+    "pre"
+    "fut"
+    "foot"
+    ;
+
+    grid-template-columns: 100%;
+    grid-template-rows: (600px + $topMargin) repeat(3, 600px) 150px;
+}
+
+.mainNos img {
+    width: 600px;
+}
+
+.nosCom, .nosTop, .nosPre {
+
+    p {
+        width: 500px;
+    }
+}
+
+.nosTop {
+    padding-right: 100px;
+}
+
+.nosBot {
+    padding-left: 100px;
+}
+
+//-----------------------------
+//-----------GALERIA-----------
+//-----------------------------
+
+#galGrid {
+    grid-template-areas:
+    "titulo"
+    "gal"
+    "foot"
+    ;
+
+    grid-template-columns: 100%;
+    grid-template-rows: (200px + $topMargin) 1fr 150px;
+}
+
+//-----------------------------
+//-------------FAQ-------------
+//-----------------------------
+
+#faqGrid {
+    grid-template-areas:
+    "tituloF tituloF"
+    "hora dias"
+    "dto coor" 
+    "foot foor"
+    ;
+
+    grid-template-columns: 50% 50%;
+    grid-template-rows: (200px + $topMargin) repeat(2, 500px) 150px;
+}
+
+}

@@ -1,0 +1,151 @@
+@media (min-width: 1025px) {
+
+//-----------------------------
+//-----------GENERAL-----------
+//-----------------------------
+
+// -----------LAYOUT-------------
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.gridPadre {
+    width: 1000px;
+}
+
+footer {
+    //Boxmodel
+    position: relative;
+    left: calc(-500px - 50%);     // Simplificacion de -(Grid + ((Ancho total - Grid) / 2)) o -(1000 + ((100% - 1000) / 2))
+
+    //Flexbox
+    flex-direction: row;
+    justify-content: start;
+
+    .copy {
+        margin-left: 200px;
+        align-self: center;
+        margin-top: 0;
+    }
+}
+
+//-----------------------------
+//------------INDEX------------
+//-----------------------------
+
+// -----------LAYOUT-------------
+
+#indexGrid {
+    grid-template-areas: 
+    "hero"
+    "car"
+    "mainT"
+    "mainB"
+    ;
+
+    grid-template-columns: 100%;
+    grid-template-rows: (600px + $topMargin) 800px repeat(2, 500px);
+}
+
+// -----------CARRUSEL-------------
+
+.customCar{
+    opacity: 0;
+    animation: carousel 1s ease-in-out forwards;
+    animation-delay: 3s;
+
+    > div {
+        width: 500px;
+    }
+}
+
+// -----------MAIN-------------
+
+.mainIndTop, .mainIndBot {
+
+    flex-direction: row;
+
+    p {
+        width: 200px;
+    }
+
+    img {
+        width: 400px;
+    }
+}
+
+.mainIndBot {
+    background-color: $color2op2;
+}
+
+//-----------------------------
+//-----------NOSOTROS----------
+//-----------------------------
+
+
+#nosGrid {
+    grid-template-areas: 
+    "mainN mainN mainN"
+    "com pre fut"
+    ;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: (600px + $topMargin) 750px;
+}
+
+.mainNos img {
+    width: 600px;
+}
+
+.nosCom, .nosPre, .nosFut {
+    width: 333px;
+    background-color: $color2op2;
+
+    justify-content: flex-start;
+
+    h2 {
+        margin: 20px 0 50px 0
+    }
+
+    p {
+        width: 290px;
+    }
+}
+
+//-----------------------------
+//-----------GALERIA-----------
+//-----------------------------
+
+#galGrid {
+    grid-template-areas:
+    "titulo"
+    "gal"
+    ;
+
+    grid-template-columns: 100%;
+    grid-template-rows: (200px + $topMargin) 1fr;
+}
+
+.galeria img {
+    margin: 10px;
+}
+
+//-----------------------------
+//-------------FAQ-------------
+//-----------------------------
+
+#faqGrid {
+    grid-template-areas:
+    "tituloF tituloF"
+    "hora dias"
+    "dto coor"
+    ;
+
+    grid-template-columns: 50% 50%;
+    grid-template-rows: (200px + $topMargin) repeat(2, 500px);
+}
+
+
+}
