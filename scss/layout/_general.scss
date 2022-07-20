@@ -16,6 +16,7 @@
 
 body {
     background-image: url(https://t3.ftcdn.net/jpg/02/75/92/70/360_F_275927014_44zbs14KsOCF3OmzChvF5I4OGUlzPGCK.jpg);
+    overflow-x: hidden;
 }
 
 .gridPadre {
@@ -75,7 +76,7 @@ footer {
             //Boxmodel
             height: 20px;
             width: 250px;
-            margin-top: 6px;
+            margin: 6px 0 0 20px;
             padding: 6px;
     
             img {

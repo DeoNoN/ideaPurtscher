@@ -84,7 +84,6 @@ footer {
 //-----------NOSOTROS----------
 //-----------------------------
 
-
 #nosGrid {
     grid-template-areas: 
     "mainN mainN mainN"
@@ -113,6 +112,41 @@ footer {
         width: 290px;
     }
 }
+
+//-----------------------------
+//-----------SERVICIOS---------
+//-----------------------------
+
+// -----------LAYOUT-------------
+
+#servGrid {
+    grid-template-areas:
+    "tituloS"
+    "tabla"
+    "trad"
+    "kapp"
+    "semi"
+    "esc"
+    ;
+
+    grid-template-columns: 100%;
+    grid-template-rows: (200px + $topMargin) repeat(5, 600px);
+}
+
+.descServ {
+    flex-direction: row;
+
+    
+    img {
+        width: 300px;
+    }
+}
+
+.servDer img {
+    order: 2;
+}
+
+
 
 //-----------------------------
 //-----------GALERIA-----------

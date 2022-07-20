@@ -130,10 +130,10 @@
         opacity: 0;
         animation: nos 1s ease-in-out forwards;
 
-        border-bottom: black solid 2px;
         width: 130px;
 
         font-size: 30px;
+        text-decoration: underline;
     }
 
     p {
@@ -187,7 +187,16 @@
 
     margin-top: $topMargin;
 
+    h1 {
+        animation: 1s nos forwards ease-in-out;
+        opacity: 0;
+    }
+
     p {
+        animation: 1s nos forwards ease-in-out;
+        animation-delay: 0.8s;
+        opacity: 0;
+        
         width: 300px;
     }
 }
@@ -196,6 +205,10 @@
 
 .tablaServ {
     grid-area: tabla;
+
+    animation: 1s nos forwards ease-in-out;
+    animation-delay: 1.8s;
+    opacity: 0;
 
     display: flex;
     align-items: center;
@@ -232,7 +245,7 @@
 // -----------SERVICIOS-------------
 
 .tradicional {
-    grid-template: trad;
+    grid-area: trad;
 }
 
 .kapping {
@@ -248,23 +261,35 @@
 }
 
 .descServ {
-
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 
+    background-color: $color2op1;
+
     img {
         width: 200px;
     }
 
-    h3 {
-        text-decoration: underline;
-    }
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
 
-    p {
-        width: 300px;
+        h3 {
+            text-decoration: underline;
+        }
+    
+        p {
+            width: 290px;
+        }
     }
+}
+
+.servDer {
+    background-color: $color2op2;
 }
 
 //-----------------------------

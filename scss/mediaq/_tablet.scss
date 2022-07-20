@@ -73,6 +73,29 @@
 }
 
 //-----------------------------
+//-----------SERVICIOS---------
+//-----------------------------
+
+// -----------LAYOUT-------------
+
+#servGrid {
+    grid-template-areas:
+    "tituloS tituloS"
+    "tabla tabla"
+    "trad kapp"
+    "semi esc"
+    "foot foot"
+    ;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: (200px + $topMargin) repeat(3, 600px) 150px;
+}
+
+.descServ p {
+    width: 250px;
+}
+
+//-----------------------------
 //-----------GALERIA-----------
 //-----------------------------
 
