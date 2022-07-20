@@ -213,7 +213,7 @@ footer .copy {
 }
 .mainIndTop img, .mainIndBot img {
   width: 200px;
-  border: solid 6px #ffc0cb;
+  border: 6px solid #ffc0cb;
 }
 
 .mainIndTop {
@@ -347,11 +347,11 @@ footer .copy {
   margin: 6px;
 }
 
-.tradicional {
+.trad {
   grid-area: trad;
 }
 
-.kapping {
+.kapp {
   grid-area: kapp;
 }
 
@@ -359,7 +359,7 @@ footer .copy {
   grid-area: semi;
 }
 
-.esculpido {
+.esc {
   grid-area: esc;
 }
 
@@ -424,7 +424,7 @@ footer .copy {
   animation: galeria 0.5s forwards;
   width: 300px;
   margin: 20px;
-  border: 6px solid #ffa9b8;
+  border: 6px solid #ffc0cb;
 }
 .galeria .gal1 {
   animation-delay: 1.9s;
@@ -601,6 +601,13 @@ footer .copy {
   .gridPadre {
     width: 1000px;
   }
+  .nav-link {
+    width: 170px;
+    border-left: 1px solid #ffc0cb;
+  }
+  .nav-link:hover {
+    background-color: #ffc0cb;
+  }
   footer {
     position: relative;
     left: calc(-500px - 50%);
@@ -666,6 +673,9 @@ footer .copy {
   }
   .descServ img {
     width: 300px;
+  }
+  .descServ div:hover {
+    transform: scale(1.5);
   }
   .servDer img {
     order: 2;

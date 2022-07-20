@@ -7,10 +7,16 @@ $color3: #ffa9b8;
 $color2op1: rgba(255, 192, 203, 0.3);
 $color2op2: rgba(255, 192, 203, 0.5);
 
-//Margenes
-
-$topMargin: 100px;
-
 //Solo areas
 
 $faqA: "hora", "dias", "dto", "coor";
+
+$servA: "trad", "kapp", "semi", "esc";
+
+//Boxmodel
+
+$topMargin: 100px;
+
+@mixin bordeEstandar {
+    border: 6px solid $color2;
+}

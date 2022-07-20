@@ -15,6 +15,19 @@ body {
     width: 1000px;
 }
 
+// -----------NAVEGADOR-------------
+
+.nav-link{
+    width: 170px;
+    border-left: 1px solid $color2;
+
+    &:hover {
+    background-color: $color2;
+    }
+}
+
+// -----------FOOTER-------------
+
 footer {
     //Boxmodel
     position: relative;
@@ -139,6 +152,10 @@ footer {
     
     img {
         width: 300px;
+    }
+
+    div:hover {
+        transform: scale(1.5);
     }
 }
 

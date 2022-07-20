@@ -66,7 +66,7 @@
 
     img {
         width: 200px;
-        border: solid 6px $color2;
+        @include bordeEstandar;
     }
 }
 
@@ -91,7 +91,7 @@
     width: 100%;
 
     > div {
-        border: 6px solid $color2;
+        @include bordeEstandar;
         width: 300px;
     }
 
@@ -244,20 +244,10 @@
 
 // -----------SERVICIOS-------------
 
-.tradicional {
-    grid-area: trad;
-}
-
-.kapping {
-    grid-area: kapp;
-}
-
-.semi {
-    grid-area: semi;
-}
-
-.esculpido {
-    grid-area: esc;
+@each $area in $servA {
+    .#{$area} {
+        grid-area: #{$area};
+    }
 }
 
 .descServ {
@@ -339,7 +329,7 @@
         animation: galeria 0.5s forwards;
         width: 300px;
         margin: 20px;
-        border: 6px solid $color3;
+        @include bordeEstandar;
     }
 
     @for $X from 1 through 12 {
@@ -393,7 +383,7 @@
     margin-bottom: 200px;
 
     iframe {
-        border: 6px solid $color2;
+        @include bordeEstandar;
         width: 300px;
     }
 
